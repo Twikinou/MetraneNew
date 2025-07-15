@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrane - Intuitive Data Reporting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="languages.js"></script>
+</head>
+<body>
+    <!-- Header moderne -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo-header.svg" alt="Metrane" class="logo">
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#solutions" class="nav-link" data-i18n="nav.solutions">Solutions</a>
+                    <a href="#product" class="nav-link" data-i18n="nav.product">Produit</a>
+                    <a href="#about" class="nav-link" data-i18n="nav.about">À propos</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <!-- Language dropdown will be inserted here by JavaScript -->
+                    <button class="btn-primary btn-navbar-cta" data-i18n="nav.startFree">Demander une démo</button>
+                </div>
+                
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Moderne -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <!-- Badge d'annonce -->
+                <div class="announcement-badge">
+                    <span class="badge">New</span>
+                    <span class="announcement-text" data-i18n="hero.badge">Metrane est maintenant en Afrique ! 🌍</span>
+                    <span class="announcement-arrow">→</span>
+                </div>
+                
+                <!-- Titre principal impactant -->
+                <h1 class="hero-title" data-i18n="hero.title">
+                    Prenez le contrôle<br>
+                    de vos <span class="gradient-text">reportings</span>
+                </h1>
+                
+                <!-- Sous-titre moderne -->
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Vos métiers savent ce qu'ils veulent. Offrez-leur les moyens de le faire.<br>
+                    Metrane vous aide à créer le reporting dont votre entreprise a besoin.
+                </p>
+                
+                <!-- Actions CTA -->
+                <div class="hero-actions">
+                    <button class="btn-primary-large" data-action="cta" data-i18n="hero.startFree">Demander une démo</button>
+                    <button class="btn-secondary-large" data-action="demo" data-i18n="hero.talkSales">En savoir plus</button>
+                </div>
+                
+                <!-- Stats modernes -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label" data-i18n="hero.stats.companies">Companies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label" data-i18n="hero.stats.uptime">Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label" data-i18n="hero.stats.support">Support</span>
+                    </div>
+                </div>
+                
+                <!-- Demo interface intégrée avec animations -->
+                <div class="hero-demo">
+                    <div class="demo-container">
+                        <div class="demo-background"></div>
+                        <div class="demo-device">
+                            <img src="assets/laptop-metrane.png" alt="Metrane Interface" class="demo-image">
+                        </div>
+                        <div class="demo-particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        <div class="demo-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Metrane Section -->
+        <section class="value-proposition">
+            <div class="container">
+                <div class="value-header">
+                    <div class="value-badge">
+                        <span class="badge-icon">🏆</span>
+                        <span class="badge-text" data-i18n="value.badge">Labellisé Fintech 2017</span>
+                    </div>
+                    <h2 class="value-title" data-i18n="value.title">
+                        Pourquoi choisir Metrane ?
+                    </h2>
+                    <p class="value-subtitle" data-i18n="value.subtitle">
+                        Des solutions qui s'adaptent à vos besoins de reporting,<br>
+                        de la conformité aux outils agiles.
+                    </p>
+                </div>
+                
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <div class="icon-wrapper">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="value-card-title" data-i18n="value.autonomy.title">Autonomie métier</h3>
+                        <p class="value-card-description" data-i18n="value.autonomy.description">
+                            Rendez vos équipes autonomes vis-à-vis des contraintes informatiques avec nos outils ouverts.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <div class="icon-wrapper">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="value-card-title" data-i18n="value.compliance.title">Conformité assurée</h3>
+                        <p class="value-card-description" data-i18n="value.compliance.description">
+                            Répondez aux enjeux réglementaires avec des solutions adaptées à vos contraintes métier.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <div class="icon-wrapper">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3h18v18H3zM8 8h8v8H8z"/>
+                                    <path d="m9 1 2 2 2-2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="value-card-title" data-i18n="value.architect.title">Architecte de vos solutions</h3>
+                        <p class="value-card-description" data-i18n="value.architect.description">
+                            Devenez architecte de vos solutions de reporting avec nos outils flexibles et puissants.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="value-cta">
+                    <button class="btn-primary-large" data-action="cta" data-i18n="value.cta">Découvrir nos solutions</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="features.title">Everything you need to<br>scale your reporting</h2>
+                    <p class="section-subtitle" data-i18n="features.subtitle">From compliance challenges to agile reporting tools</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="assets/icon-metier.png" alt="Business Intelligence">
+                        </div>
+                        <h3 class="feature-title" data-i18n="features.business.title">Business Intelligence</h3>
+                        <p class="feature-description" data-i18n="features.business.description">
+                            From compliance challenges to agile reporting tools, 
+                            we provide solutions adapted to your regulatory and business needs.
+                        </p>
+                        <a href="#" class="feature-link" data-i18n="features.business.link">Learn more →</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="assets/icon-outil.png" alt="Metrane Tools">
+                        </div>
+                        <h3 class="feature-title" data-i18n="features.tools.title">Metrane Tools</h3>
+                        <p class="feature-description" data-i18n="features.tools.description">
+                            An open reporting tool in the hands of users, making business 
+                            teams autonomous from IT constraints.
+                        </p>
+                        <a href="#" class="feature-link" data-i18n="features.tools.link">Learn more →</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="assets/icon-expertise.png" alt="Expert Support">
+                        </div>
+                        <h3 class="feature-title" data-i18n="features.expertise.title">Expert Support</h3>
+                        <p class="feature-description" data-i18n="features.expertise.description">
+                            Our experience building custom solutions and assisting 
+                            you end-to-end with your projects.
+                        </p>
+                        <a href="#" class="feature-link" data-i18n="features.expertise.link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Conseil & Intégration Section -->
+        <section class="consulting-section">
+            <div class="container">
+                <div class="consulting-content">
+                    <div class="consulting-text">
+                        <div class="consulting-header">
+                            <span class="consulting-badge" data-i18n="consulting.badge">Conseil & Intégration</span>
+                            <h2 class="consulting-title" data-i18n="consulting.title">
+                                Des experts à votre service !
+                            </h2>
+                            <p class="consulting-subtitle" data-i18n="consulting.subtitle">
+                                Notre expertise pour construire avec vous des solutions sur mesure et vous assister 
+                                de bout en bout de vos projets.
+                            </p>
+                        </div>
+                        
+                        <div class="consulting-features">
+                            <div class="consulting-feature">
+                                <div class="feature-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4"/>
+                                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                                        <path d="M13 12h3"/>
+                                        <path d="M8 12H5"/>
+                                    </svg>
+                                </div>
+                                <span data-i18n="consulting.feature1">Paramétrage de vos reports</span>
+                            </div>
+                            <div class="consulting-feature">
+                                <div class="feature-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14,2 14,8 20,8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10,9 9,9 8,9"/>
+                                    </svg>
+                                </div>
+                                <span data-i18n="consulting.feature2">Extractions spécifiques</span>
+                            </div>
+                            <div class="consulting-feature">
+                                <div class="feature-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="m22 21-3-3m0 0a5 5 0 1 0-7-7 5 5 0 0 0 7 7z"/>
+                                    </svg>
+                                </div>
+                                <span data-i18n="consulting.feature3">Accompagnement projet</span>
+                            </div>
+                        </div>
+                        
+                        <div class="consulting-cta">
+                            <button class="btn-primary" data-action="cta" data-i18n="consulting.cta">Parlons de votre projet</button>
+                            <a href="tel:+33186950408" class="consulting-phone" data-i18n="consulting.phone">01 86 95 04 08</a>
+                        </div>
+                    </div>
+                    
+                    <div class="consulting-visual">
+                        <div class="consulting-card">
+                            <div class="card-header">
+                                <div class="card-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="card-title">Conseil Metrane</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="expertise-items">
+                                    <div class="expertise-item">
+                                        <span class="item-dot"></span>
+                                        <span data-i18n="consulting.card.item1">Solutions sur mesure</span>
+                                    </div>
+                                    <div class="expertise-item">
+                                        <span class="item-dot"></span>
+                                        <span data-i18n="consulting.card.item2">Accompagnement bout en bout</span>
+                                    </div>
+                                    <div class="expertise-item">
+                                        <span class="item-dot"></span>
+                                        <span data-i18n="consulting.card.item3">Expertise métier</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section Moderne -->
+        <section class="cta-modern">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-i18n="cta.title">Ready to transform your reporting?</h2>
+                    <div class="cta-actions">
+                        <button class="btn-primary-large" data-action="cta" data-i18n="cta.button">Get started for free</button>
+                        <div class="contact-info">
+                            <span data-i18n="cta.contact">Need help? Call us at</span>
+                            <a href="tel:+33186950408" class="phone-link" data-i18n="cta.phone">01 86 95 04 08</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Moderne -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo-footer.png" alt="Metrane" class="footer-logo">
+                    <p class="footer-tagline" data-i18n="footer.tagline">Intuitive Data Reporting</p>
+                    <div class="footer-certification">
+                        <img src="assets/finance-innovation.png" alt="Labellisé Finance Innovation" class="certification-badge">
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-i18n="footer.product.title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Features</a></li>
+                            <li><a href="#" class="footer-link">Pricing</a></li>
+                            <li><a href="#" class="footer-link">Security</a></li>
+                            <li><a href="#" class="footer-link">API</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-i18n="footer.company.title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">About</a></li>
+                            <li><a href="#" class="footer-link">Careers</a></li>
+                            <li><a href="#" class="footer-link">News</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-i18n="footer.resources.title">Resources</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Documentation</a></li>
+                            <li><a href="#" class="footer-link">Help Center</a></li>
+                            <li><a href="#" class="footer-link">Community</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-i18n="footer.contact.title">Contact</h4>
+                        <address class="footer-address" data-i18n="footer.contact.address">
+                            10 rue de Penthièvre<br>
+                            75008 Paris<br>
+                            <a href="tel:+33186950408" class="footer-phone">01 86 95 04 08</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright" data-i18n="footer.copyright">© 2024 Metrane. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#" class="legal-link">Privacy Policy</a>
+                        <a href="#" class="legal-link">Terms of Service</a>
+                        <a href="#" class="legal-link">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Moderne -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p data-i18n="cookies.text">We use cookies to improve your experience and analyze site traffic. 
+                <a href="#" class="cookie-link" data-i18n="cookies.learnMore">Learn more</a></p>
+            </div>
+            <div class="cookie-actions">
+                <button id="acceptCookies" class="btn-primary-small" data-i18n="cookies.accept">Accept all</button>
+                <button id="declineCookies" class="btn-ghost-small" data-i18n="cookies.decline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize language system
+        document.addEventListener('DOMContentLoaded', () => {
+            const languageManager = new LanguageManager();
+        });
+    </script>
+</body>
+</html>
